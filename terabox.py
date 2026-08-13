@@ -79,12 +79,12 @@ if len(USER_SESSION_STRING) == 0:
     logging.info("USER_SESSION_STRING variable is missing! Bot will split Files in 2Gb...")
     USER_SESSION_STRING = None
 
-app = Client("jetbot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client("ftmbot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 user = None
 SPLIT_SIZE = 2093796556
 if USER_SESSION_STRING:
-    user = Client("jetu", api_id=API_ID, api_hash=API_HASH, session_string=USER_SESSION_STRING)
+    user = Client("ftm", api_id=API_ID, api_hash=API_HASH, session_string=USER_SESSION_STRING)
     SPLIT_SIZE = 4241280205
 
 VALID_DOMAINS = [
@@ -122,13 +122,13 @@ def format_size(size):
 
 @app.on_message(filters.command("start"))
 async def start_command(client: Client, message: Message):
-    join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/jetmirror")
+    join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/ftmbotzx")
     developer_button = InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="https://t.me/rtx5069")
-    repo69 = InlineKeyboardButton("ʀᴇᴘᴏ 🌐", url="https://github.com/Hrishi2861/Terabox-Downloader-Bot")
+    repo69 = InlineKeyboardButton("ʀᴇᴘᴏ 🌐", url="https://github.com/ftmdeveloperr/Terabox-dlbot")
     user_mention = message.from_user.mention
     reply_markup = InlineKeyboardMarkup([[join_button, developer_button], [repo69]])
     final_msg = f"ᴡᴇʟᴄᴏᴍᴇ, {user_mention}.\n\n🌟 ɪ ᴀᴍ ᴀ ᴛᴇʀᴀʙᴏx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ. sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴛᴇʀᴀʙᴏx ʟɪɴᴋ ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ᴡɪᴛʜɪɴ ғᴇᴡ sᴇᴄᴏɴᴅs ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ ✨."
-    video_file_id = "/app/Jet-Mirror.mp4"
+    video_file_id = "/app/ftmbotzx-Mirror.mp4"
     if os.path.exists(video_file_id):
         await client.send_video(
             chat_id=message.chat.id,
@@ -156,7 +156,7 @@ async def handle_message(client: Client, message: Message):
     is_member = await is_user_member(client, user_id)
 
     if not is_member:
-        join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/jetmirror")
+        join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/ftmbotzx")
         reply_markup = InlineKeyboardMarkup([[join_button]])
         await message.reply_text("ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.", reply_markup=reply_markup)
         return
@@ -210,7 +210,7 @@ async def handle_message(client: Client, message: Message):
         f"✨ {download.name}\n"
         f"👤 ʟᴇᴇᴄʜᴇᴅ ʙʏ : <a href='tg://user?id={user_id}'>{message.from_user.first_name}</a>\n"
         f"📥 ᴜsᴇʀ ʟɪɴᴋ: tg://user?id={user_id}\n\n"
-        "[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴇᴛ-ᴍɪʀʀᴏʀ ❤️🚀](https://t.me/JetMirror)"
+        "[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴇᴛ-ᴍɪʀʀᴏʀ ❤️🚀](https://t.me/ftmbotzx)"
     )
 
     last_update_time = time.time()
