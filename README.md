@@ -10,16 +10,6 @@ This is a Telegram Bot written in Python for Downloading Videos From Terabox.
 - `DUMP_CHAT_ID`: The Dump Channel, all leeched videos will be Forwared Here. (Enter the Channel/Group ID starting with -100). `Int`
 - `USER_SESSION_STRING`: Pyrogram Session String For 4GB Upload, also add this var for better Uploading Speeds. `Str`
 
----
-### For farther assistance visit my support group: [**@JetMirror**](https://t.me/jetmirrorchatz).
----
-
-## Deploy using CLI on Heroku
-
-- Deployment instructions uploaded [**HERE**](https://gist.github.com/Hrishi2861/3f04a05b4d86241a454bd284ed1c3dee)
-- Carefully copy-paste every CMD one by one. If you miss maybe your BOT will not run.
-
----
 ## Deploy on VPS
 ---
 ## Prerequisites
@@ -29,7 +19,7 @@ This is a Telegram Bot written in Python for Downloading Videos From Terabox.
 - Clone this repo:
 
 ```
-git clone https://github.com/Hrishi2861/Terabox-Downloader-Bot/ && cd Terabox-Downloader-Bot
+git clone https://github.com/ftmdeveloperr/Terabox-dlbot/ && cd Terabox-dlbot
 ```
 
 - For Debian based distros
